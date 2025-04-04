@@ -1,9 +1,9 @@
 #include<stdio.h>
  main()
  {
- 	int i,n,count=0,fact=1;
- 	printf("enter n");
- 	scanf("%d",&n);
+ 	int i,n,count=0,fact=1,j;
+ 	printf("enter i");
+ 	scanf("%d",&i);
  	printf("select 1 for even or odd\n");
  	printf("select 2 for fractorial\n");
  	printf("select 3 for prime or not\n");
@@ -11,22 +11,23 @@
  	printf("enter choice");
  	 	scanf("%d",&n);
  	 	switch(n)
- 	 	{
- 	 		case 1:
- 	 			if(n%2==0)
+ 	 	{ 
+ 	 	case  1:		
+		  if(i%2==0)
  	 			printf("even");
  	 			else
  	 			printf("odd");
  	 			break;
  	 			case 2:
- 	 				for(i=1;i<=n;i++)
- 	 				fact=fact*i;
+ 	 				 	 				for(j=1;j<=i;j++)
+ 	 				fact=fact*j;
  	 			printf("%d",fact);
  	 			break;
  	 			case 3:
- 	 				for(i=1;i<=n;i++)
+ 	 				
+ 	 				for(j=1;j<=i;j++)
  	 				{
- 	 					if(n%i==0)
+ 	 					if(i%j==0)
  	 					count++;
 					  }
  	 				if(count==2)
